@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Lato", "SST W01 Roman", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+  font-weight: 300;
+} */
+
+p {
+  margin: 0 !important;
+}
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 10px;
+  background-color: rgb(217, 205, 188);
+  align-items: center;
+} */
+
+/* .appLogo {
+  max-width: 140px;
+  max-height: 140px;
+} */
+/* .nav-items > ul {
+  display: flex;
+  margin-bottom: 0;
+} */
+li {
+  list-style-type: none;
+  margin: 15px 0;
+  font-weight: 500;
+  font-size: large;
+}
+/* .search {
+  margin: 20px;
+  display: flex;
+} */
+
+.res-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resturant-card {
+  text-align: center;
+  outline: none;
+  margin: 10px;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(238, 231, 221);
+  border-radius: 15px;
+}
+
+.resturant-card > .img-item {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+}
+.resturant-card > .img-item > img {
+  height: 260px;
+  width: 90%;
+  border-radius: 30px;
+  display: inline;
+}
+
+.resturant-card > .img-item > p {
+  position: absolute;
+  bottom: 5px;
+  left: 30%;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.cuisines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 300;
+  padding: 0 10px;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+}
+
+.help-container {
+  background-color: rgb(211, 189, 157);
+}
+
+.error-container {
+  background-color: rgb(249, 214, 170);
+  color: brown;
+  margin: 20px;
+  text-align: center;
+}
+.resturant-menu {
+  margin: 20px auto 0;
+  max-width: 1200px;
+  min-height: 1200px;
+}
+
+.resturant-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resturant-info img {
+  width: 200px;
+  height: 200px;
+}
+.footer {
+  background-color: rgb(180, 122, 34);
+  color: blanchedalmond;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5%;
+  padding: 5%;
+
+  display: grid;
+}
+
+.rating-box {
+  border: 1px solid rgb(202, 196, 196);
+  width: 110px;
+  height: 70px;
+  padding: 5px;
+}
+
+.menu-list {
+  margin: 0 10%;
+}
+.footer a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+.food-item:not(:last-child) {
+  border-bottom: 16px solid #f1f1f6;
+  margin-bottom: 10px;
+}
+
+.food-detail:not(:last-child) {
+  border-bottom: 1px solid #c0c0c9;
+}

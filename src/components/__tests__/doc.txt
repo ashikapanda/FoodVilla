@@ -1,0 +1,8 @@
+install react testing library
+install jest as react testing library uses jest
+configure jest --> npx jest --init  it creates a jest.config.js file
+install  jest-environment-jsdom
+create test file
+config babel with jest to use imports in test files as vanilla js dont understand the import syntax
+testcases are running in jsdom and not on browser, jest doesnot understand jsx syntax
+    - to make jest understand jsx, add @babel/preset-react in babel config file
