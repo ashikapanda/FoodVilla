@@ -19,9 +19,12 @@ const BodyComponent = () => {
       if (res.error) {
         setError(true);
       } else {
+        const fitleredCard = res?.data?.cards.filter((item) => {
+          return item?.card?.card?.id === "top_brands_for_you";
+        });
+        console.log("--------", fitleredCard);
         setResData(
-          res?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-            ?.restaurants
+          fitleredCard[0]?.card?.card?.gridElements?.infoWithStyle?.restaurants
         );
       }
     });
